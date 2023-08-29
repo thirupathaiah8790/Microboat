@@ -1,0 +1,61 @@
+body{
+    background:url("bg.jpg");
+    background-size: cover;
+    margin:0;
+    padding:0;
+    background-position: cebter;
+    
+}
+.reg-page{
+    height:fit-content;
+    width:400px;
+    background: cornflowerblue;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding:50px 50px;
+}
+h1{
+    color:azure;
+    position: absolute;
+    top:20px;
+    left:30%;
+    margin:0;
+    padding:0 0px 20px;
+}
+.reg-page p{
+    color:deeppink;
+    font-family:sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin:0px;
+    padding:0px;
+    margin-top: 20px;
+}
+.reg-page input{
+   
+    width:fit-content;
+    margin-top:10px;
+}
+.reg-page input[type="text"],input[type="password"]{
+    border: none;
+    height: 30px;
+    color:black;
+    font-size:20px;
+}
+.reg-page input[type="submit"]{
+    cursor: pointer;
+    padding:5px;
+    background: black;
+    color:whitesmoke;
+    font-size: 15px;
+    border-color: aliceblue;
+    border-width:3px;
+}
+.reg-page span{
+    font-size: 20px;
+    
+}

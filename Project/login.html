@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Login Page </title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <script src="./index.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script>
+            function validateForm() {
+                var userName = document.forms["loginform"]["userName"].value;
+                var password = document.forms["loginform"]["password"].value;
+
+                if (userName === "" && password === "" ) {
+                    alert("All fields must be filled out");
+                    return false;
+                }
+
+                if(userName==="" || password==="password"){
+                    alert("Please enter the Username")
+                    return false;
+                   
+                }
+                if(userName==="userName" || password===""){
+                    alert("Please enter the Password")
+                    return false;
+                   
+                }
+                
+               
+                
+                return true;
+            }
+                
+       
+        </script>
+        
+        
+       
+    </head>
+        <body>
+            <div class="cont">
+                <img src="logo.jpg" class="image">
+                <h1>Login</h1>
+                <div class="formCont">
+                <form  action="http://127.0.0.1:5500/Microbotscreative/login/new.html" name="loginform" onsubmit = "return validateForm()">
+                    <p for="userName">Username</p>
+                    <input type="text" name="userName" id="userName" placeholder="Username"  >
+                    <p for="password">Password</p>
+                    <input type="password"  id="password" name="password" placeholder="Enter password"  >
+                    <button type="submit" class="btn btn-primary" >Submit</button><br>
+                    <a href="#">Forgot password</a><br>
+                    <a href="register.html">Create an account</a>
+                </form>
+                </div>
+            </div>
+
+            
+        </body>
+    
+</html>
